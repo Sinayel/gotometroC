@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"name": "gotometroesp32",
+			"path": "../../../Documents/PlatformIO/Projects/gotometroesp32"
+		}
+	],
+	"settings": {}
+}
