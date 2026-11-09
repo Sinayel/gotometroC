@@ -1,7 +1,7 @@
 ![Languages](https://img.shields.io/badge/languages-C/C++-blue) ![Tech](https://img.shields.io/badge/tech-ESP32-purple) ![License](https://img.shields.io/badge/license-MIT-purple)
 # GoToMetro ESP32
 
-Sert a afficher l'heure des prochain metro, la c'est de base configurer sur l'arret, Saint-Laz ligne 14 direction Orly, il donne les 4 prochains  passages.
+Sert a afficher l'heure des 4 prochains métro, il et de base configurer sur l'arret de, Saint-Laz ligne 14 direction Orly.
 
 pour la version [esp32](https://github.com/Sinayel/gotometroC/tree/main/gotometroesp32) commencer par :
 | PC (libcurl) | ESP32 (Arduino)     |
