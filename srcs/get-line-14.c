@@ -9,7 +9,7 @@ size_t save(char *data, size_t size, size_t n, void *userdata)
     (void)userdata;
     memcpy(reponse + taille, data, size * n);
     taille += size * n;
-    reponse[taille + 1] = '\0';
+    reponse[taille] = '\0';
 
     return (size * n);
 }
@@ -33,9 +33,9 @@ int main(void)
 
     while ((s = strstr(s, depart_str)) != NULL) {
         s += strlen(depart_str);    // On saute le departure data time
-        printf("---------------------\n");
-        printf("%d - Metro (13) : %.2s:%.2s\n", ++i, s + 9, s + 11);    // s + 9 = 1er nb | s + 11 = 2eme nb
-        printf("---------------------\n");
+        printf("--------------------------------------------\n");
+        printf("  %d - Metro (14) > Aéroport d'Orly : %.2s:%.2s\n", ++i, s + 9, s + 11);    // s + 9 = 1er nb | s + 11 = 2eme nb
+        printf("--------------------------------------------\n");
     }
 
     curl_easy_cleanup(curl);

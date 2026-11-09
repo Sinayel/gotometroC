@@ -8,7 +8,7 @@ OBJ_DIR = obj
 SRC_DIR = srcs
 
 HEADER = include/header.h
-SRCS = main.c
+SRCS = get-line-14.c 
 
 NAME = gotometro-c
 
