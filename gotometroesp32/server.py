@@ -7,29 +7,42 @@ TOKEN   = os.environ["RELAY_TOKEN"]
 URL = ("https://prim.iledefrance-mobilites.fr/marketplace/v2/navitia/"
        "stop_areas/stop_area%3AIDFM%3A71370/lines/line%3AIDFM%3AC01384/"
        "routes/route%3AIDFM%3Astif%3Alocal-251106-C01384-5/departures"
-       "?data_freshness=realtime&count=4&depth=0")
+       "?data_freshness=realtime&count=4")
 
 class Relay(BaseHTTPRequestHandler):
     def do_GET(self):
         if self.path != f"/m14?t={TOKEN}":
-            self.send_response(403);
-            self.end_headers();
+            self.send_response(403)
+            self.end_headers()
             return
         try:
-            req = urllib.request.Request(URL, headers={"apikey": API_KEY})  # fais la requete GET sur l'URL demander
-            data = json.load(urllib.request.urlopen(req, timeout=10))   # Seconde requete pour l'avoir en json clean
-            print(json.dumps(data, indent=2, ensure_ascii=False))
+            req = urllib.request.Request(URL, headers={"apikey": API_KEY})
+            data = json.load(urllib.request.urlopen(req, timeout=10))
 
-            times = []
-            for d in data["departures"]:    # va au debut de la ligne des departs 
-                times.append(d["stop_date_time"]["departure_date_time"])
-            # print(times)
-            body = " ".join(f"{t[9:11]}:{t[11:13]}" for t in times)    # relie tous les caractere ensemble avec : de separation a partir de la ligne de depart 'times'
-            self.send_response(200)     # retourne 200 comme code ok
+            # heures : "20261110T190021" -> "19:00"
+            heures = []
+            for d in data.get("departures", []):
+                t = d["stop_date_time"]["departure_date_time"]
+                heures.append(f"{t[9:11]}:{t[11:13]}")
+
+            # perturbations : message court du canal "titre"
+            infos = []
+            for d in data.get("disruptions", []):
+                if d.get("status") != "active":
+                    continue
+                for m in d.get("messages", []):
+                    if m.get("channel", {}).get("name") == "titre":
+                        infos.append(m["text"])
+                        break
+            info = " | ".join(infos) if infos else "Trafic normal"
+
+            body = " ".join(heures) + "\n" + info
+            self.send_response(200)
         except Exception as e:
             body = f"err {e}"
-            self.send_response(502) # retourne 502 en code erreur
-        self.end_headers()  # clean
-        self.wfile.write(body.encode())
+            self.send_response(502)
+        self.send_header("Content-Type", "text/plain; charset=utf-8")
+        self.end_headers()
+        self.wfile.write(body.encode("utf-8"))
 
-HTTPServer(("0.0.0.0", 8000), Relay).serve_forever()    # run sur le localhost au port 8000
+HTTPServer(("0.0.0.0", 8000), Relay).serve_forever()

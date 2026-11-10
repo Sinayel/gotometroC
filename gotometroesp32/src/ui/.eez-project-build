@@ -1,0 +1,32 @@
+{
+  "files": [
+    "actions.h",
+    "fonts.h",
+    "images.c",
+    "images.h",
+    "screens.c",
+    "screens.h",
+    "structs.h",
+    "styles.c",
+    "styles.h",
+    "ui.c",
+    "ui.h",
+    "ui_font_paris_65.c",
+    "ui_font_parisine_15.c",
+    "ui_font_parisine_23.c",
+    "ui_font_parisine_30.c",
+    "ui_font_parisine_40.c",
+    "ui_font_parisine_55.c",
+    "ui_image_13_logo.c",
+    "ui_image_14_logo_35pix.c",
+    "ui_image_45.c",
+    "ui_image_50.c",
+    "ui_image_50_png.c",
+    "ui_image_50x50_pixl_logo_14.c",
+    "ui_image_alerte_gris.c",
+    "ui_image_alerte_orange.c",
+    "ui_image_m_logo35.c",
+    "ui_image_metro_logo.c",
+    "vars.h"
+  ]
+}

@@ -132,6 +132,7 @@
             "backgroundColor": "#E9EEF1",
             "borderRadius": "2"
           },
+          "hiddenInEditor": false,
           "timeline": [],
           "eventHandlers": []
         },
@@ -151,6 +152,7 @@
             "childStyles": [],
             "backgroundColor": "#98D4E2"
           },
+          "hiddenInEditor": false,
           "timeline": [],
           "eventHandlers": []
         },
@@ -428,8 +430,8 @@
         {
           "objID": "d53de161-1b31-402b-a1d3-ab90c5364c7b",
           "type": "TextDashboardWidget",
-          "left": 190,
-          "top": 10,
+          "left": 251,
+          "top": 78,
           "width": 159,
           "height": 76,
           "customInputs": [],
@@ -438,6 +440,30 @@
           "visible": "",
           "style": {
             "objID": "cd4ae7c5-a66d-4591-e0e9-c6f660de6a02",
+            "useStyle": "default",
+            "conditionalStyles": [],
+            "childStyles": [],
+            "fontFamily": "Parisine",
+            "fontSize": "30",
+            "fontWeight": "bold"
+          },
+          "timeline": [],
+          "eventHandlers": [],
+          "name": "Liege"
+        },
+        {
+          "objID": "de4cf56f-b5cc-4b14-c010-145bceb45ca2",
+          "type": "TextDashboardWidget",
+          "left": 190,
+          "top": 10,
+          "width": 128,
+          "height": 55,
+          "customInputs": [],
+          "customOutputs": [],
+          "data": "",
+          "visible": "",
+          "style": {
+            "objID": "df8932c7-f5ba-46ba-979d-686678020b12",
             "useStyle": "default",
             "conditionalStyles": [],
             "childStyles": [],
