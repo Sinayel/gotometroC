@@ -11,12 +11,14 @@ extern "C" {
 
 enum ScreensEnum {
     _SCREEN_ID_FIRST = 1,
-    SCREEN_ID_MAIN = 1,
-    _SCREEN_ID_LAST = 1
+    SCREEN_ID_LIGNE_14 = 1,
+    SCREEN_ID_LIGNE_13 = 2,
+    _SCREEN_ID_LAST = 2
 };
 
 typedef struct _objects_t {
-    lv_obj_t *main;
+    lv_obj_t *ligne_14;
+    lv_obj_t *ligne_13;
     lv_obj_t *obj0;
     lv_obj_t *obj1;
     lv_obj_t *obj2;
@@ -32,12 +34,30 @@ typedef struct _objects_t {
     lv_obj_t *lbl_metro_txt;
     lv_obj_t *msg_perturbation;
     lv_obj_t *alerte_logo;
+    lv_obj_t *obj10;
+    lv_obj_t *obj11;
+    lv_obj_t *obj12;
+    lv_obj_t *obj13;
+    lv_obj_t *obj14;
+    lv_obj_t *obj15;
+    lv_obj_t *obj16;
+    lv_obj_t *obj17;
+    lv_obj_t *obj18;
+    lv_obj_t *obj19;
+    lv_obj_t *lbl_metro1_1;
+    lv_obj_t *lbl_metro2_1;
+    lv_obj_t *lbl_metro_txt_1;
+    lv_obj_t *msg_perturbation_1;
+    lv_obj_t *alerte_logo_1;
 } objects_t;
 
 extern objects_t objects;
 
-void create_screen_main();
-void tick_screen_main();
+void create_screen_ligne_14();
+void tick_screen_ligne_14();
+
+void create_screen_ligne_13();
+void tick_screen_ligne_13();
 
 void tick_screen_by_id(enum ScreensEnum screenId);
 void tick_screen(int screen_index);
