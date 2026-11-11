@@ -16,9 +16,8 @@ class Relay(BaseHTTPRequestHandler):
             self.end_headers()
             return
         try:
-            req = urllib.request.Request(URL, headers={"apikey": API_KEY})
-            data = json.load(urllib.request.urlopen(req, timeout=10))
-
+            with urllib.request.Request(URL, headers={"apikey": API_KEY}) as reps:
+                data = json.load(urllib.request.urlopen(reps, timeout=10))
             # heures : "20261110T190021" -> "19:00"
             heures = []
             for d in data.get("departures", []):
