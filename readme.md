@@ -30,4 +30,5 @@ pour la version [esp32](https://github.com/Sinayel/gotometroC/tree/main/gotometr
 [libcurl](https://curl.se/libcurl/)
 \
 [Navitia PRIM (Playground)](https://prim.iledefrance-mobilites.fr/playground/index.html)
-
+\
+[Eez studio](https://www.envox.eu/studio/studio-introduction/)
