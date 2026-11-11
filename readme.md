@@ -26,6 +26,8 @@ pour la version [esp32](https://github.com/Sinayel/gotometroC/tree/main/gotometr
 
 ![Photo esp32](https://github.com/Sinayel/gotometroC/blob/main/img/photo-esp32.png)
 
+![Photo esp32](https://github.com/Sinayel/gotometroC/blob/main/img/esp32-video.gif)
+
 ![Prototype project](https://github.com/Sinayel/gotometroC/blob/main/img/affiche-metro-esp32.png)
 
 ## Documentation
