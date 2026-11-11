@@ -27,8 +27,8 @@ pour la version [esp32](https://github.com/Sinayel/gotometroC/tree/main/gotometr
 
 ## Documentation
 
-[libcurl](https://curl.se/libcurl/)
+[libcurl](https://curl.se/libcurl/) Bibliotheque pour faire des requêtes GET
 \
-[Navitia PRIM (Playground)](https://prim.iledefrance-mobilites.fr/playground/index.html)
+[Navitia PRIM (Playground)](https://prim.iledefrance-mobilites.fr/playground/index.html) API de jeu pour tout le reseau IDF
 \
-[Eez studio](https://www.envox.eu/studio/studio-introduction/)
+[Eez studio](https://www.envox.eu/studio/studio-introduction/) App pour faire des design graphique
