@@ -195,10 +195,10 @@ void setup() {
 
   ui_init();
 
-  lignes[0] = { API_URL_14, objects.ligne_14, objects.lbl_metro1, objects.lbl_metro2,
-                objects.lbl_metro_txt, objects.msg_perturbation, objects.alerte_logo };
-  lignes[1] = { API_URL_13, objects.ligne_13, objects.lbl_metro1_1, objects.lbl_metro2_1,
-                objects.lbl_metro_txt_1, objects.msg_perturbation_1, objects.alerte_logo_1 };
+  lignes[0] = { API_URL_14, objects.ligne_14, objects.lbl_metro1_line14, objects.lbl_metro2_line14,
+                objects.lbl_metro_txt_line14, objects.msg_perturbation_line14, objects.alerte_logo };
+  lignes[1] = { API_URL_13, objects.ligne_13, objects.lbl_metro1_line13, objects.lbl_metro2_line13,
+                objects.lbl_metro_txt_line13, objects.msg_perturbation_line_13, objects.alerte_logo };
 
   for (int i = 0; i < 2; i++) {
     prepare_gestes(lignes[i].page);

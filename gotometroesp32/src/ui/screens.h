@@ -29,10 +29,10 @@ typedef struct _objects_t {
     lv_obj_t *obj7;
     lv_obj_t *obj8;
     lv_obj_t *obj9;
-    lv_obj_t *lbl_metro1;
-    lv_obj_t *lbl_metro2;
-    lv_obj_t *lbl_metro_txt;
-    lv_obj_t *msg_perturbation;
+    lv_obj_t *lbl_metro1_line14;
+    lv_obj_t *lbl_metro2_line14;
+    lv_obj_t *lbl_metro_txt_line14;
+    lv_obj_t *msg_perturbation_line14;
     lv_obj_t *alerte_logo;
     lv_obj_t *obj10;
     lv_obj_t *obj11;
@@ -41,13 +41,13 @@ typedef struct _objects_t {
     lv_obj_t *obj14;
     lv_obj_t *obj15;
     lv_obj_t *obj16;
+    lv_obj_t *liege;
     lv_obj_t *obj17;
     lv_obj_t *obj18;
-    lv_obj_t *obj19;
-    lv_obj_t *lbl_metro1_1;
-    lv_obj_t *lbl_metro2_1;
-    lv_obj_t *lbl_metro_txt_1;
-    lv_obj_t *msg_perturbation_1;
+    lv_obj_t *lbl_metro1_line13;
+    lv_obj_t *lbl_metro2_line13;
+    lv_obj_t *lbl_metro_txt_line13;
+    lv_obj_t *msg_perturbation_line_13;
     lv_obj_t *alerte_logo_1;
 } objects_t;
 
