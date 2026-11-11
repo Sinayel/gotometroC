@@ -13,6 +13,7 @@
     "ui.h",
     "ui_font_paris_65.c",
     "ui_font_parisine_15.c",
+    "ui_font_parisine_20.c",
     "ui_font_parisine_23.c",
     "ui_font_parisine_30.c",
     "ui_font_parisine_40.c",

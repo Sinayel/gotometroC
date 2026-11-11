@@ -33,10 +33,14 @@ void fetch_times() {
     String heures = nl >= 0 ? rep.substring(0, nl) : rep;
     String info   = nl >= 0 ? rep.substring(nl + 1) : "";
 
-    if (heures.length() >= 5)
-      lv_label_set_text(objects.lbl_metro1, heures.substring(3, 5).c_str());
-    if (heures.length() >= 11)
-      lv_label_set_text(objects.lbl_metro2, heures.substring(9, 11).c_str());
+    int sp = heures.indexOf(' ');
+    String m1 = sp >= 0 ? heures.substring(0, sp) : heures;
+    String reste = sp >= 0 ? heures.substring(sp + 1) : "";
+    int sp2 = reste.indexOf(' ');
+    String m2 = sp2 >= 0 ? reste.substring(0, sp2) : reste;
+
+    lv_label_set_text_fmt(objects.lbl_metro1, "%s", m1.c_str());
+    lv_label_set_text_fmt(objects.lbl_metro2, "%s", m2.c_str());
     lv_label_set_text(objects.msg_perturbation, info.c_str());
   } else {
     lv_label_set_text_fmt(objects.lbl_metro1, "Err %d", code);

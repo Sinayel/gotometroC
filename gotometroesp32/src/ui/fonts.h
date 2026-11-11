@@ -13,6 +13,7 @@ extern const lv_font_t ui_font_parisine_55;
 extern const lv_font_t ui_font_parisine_40;
 extern const lv_font_t ui_font_parisine_15;
 extern const lv_font_t ui_font_parisine_23;
+extern const lv_font_t ui_font_parisine_20;
 
 #ifndef EXT_FONT_DESC_T
 #define EXT_FONT_DESC_T
