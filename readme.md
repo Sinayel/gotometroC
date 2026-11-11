@@ -37,3 +37,5 @@ pour la version [esp32](https://github.com/Sinayel/gotometroC/tree/main/gotometr
 [Documentation PRIM](https://prim.iledefrance-mobilites.fr/en/aide-et-contact/documentation/generale/ressources) Docs de PRIM
 \
 [Eez studio](https://www.envox.eu/studio/studio-introduction/) App pour faire des design graphique
+\
+[Jq](https://pypi.org/project/jq/) Library for extract and read, filter JSON data
