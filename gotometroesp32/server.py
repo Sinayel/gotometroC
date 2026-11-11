@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 import json, os, urllib.request
+from datetime import datetime
+from zoneinfo import ZoneInfo
 from http.server import BaseHTTPRequestHandler, HTTPServer
 
 API_KEY = os.environ["PRIM_KEY"]
@@ -16,26 +18,33 @@ class Relay(BaseHTTPRequestHandler):
             self.end_headers()
             return
         try:
-            with urllib.request.Request(URL, headers={"apikey": API_KEY}) as reps:
-                data = json.load(urllib.request.urlopen(reps, timeout=10))
-            # heures : "20261110T190021" -> "19:00"
-            heures = []
-            for d in data.get("departures", []):
-                t = d["stop_date_time"]["departure_date_time"]
-                heures.append(f"{t[9:11]}:{t[11:13]}")
+            req = urllib.request.Request(URL, headers={"apikey": API_KEY})   # prépare
+            with urllib.request.urlopen(req, timeout=10) as resp:           # ouvre
+                data = json.load(resp) 
 
-            # perturbations : message court du canal "titre"
+            now = datetime.now(ZoneInfo("Europe/Paris")).replace(tzinfo=None)
+            minutes = []
+            for d in data.get("departures", []):
+                t = datetime.strptime(d["stop_date_time"]["departure_date_time"], "%Y%m%dT%H%M%S")
+                m = int((t - now).total_seconds() // 60)
+                minutes.append(str(max(m, 0)))   # 0 si le métro est a quai
+
             infos = []
             for d in data.get("disruptions", []):
                 if d.get("status") != "active":
                     continue
                 for m in d.get("messages", []):
-                    if m.get("channel", {}).get("name") == "titre":
+                    if m.get("channel", {}).get("name") == "sms ascenseurs":
                         infos.append(m["text"])
+                        print(infos)
                         break
-            info = " | ".join(infos) if infos else "Trafic normal"
 
-            body = " ".join(heures) + "\n" + info
+            if infos:
+                info = " | ".join(infos)
+            else:
+                "Aucune perturbation !"
+
+            body = " ".join(minutes) + "\n" + info
             self.send_response(200)
         except Exception as e:
             body = f"err {e}"
