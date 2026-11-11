@@ -2,6 +2,10 @@
 # GoToMetro ESP32
 
 Sert a afficher l'heure des 4 prochains métro, il et de base configurer sur l'arret de, Saint-Laz ligne 14 direction Orly.
+### Description
+La version pour esp marche avec un serveur python qui sert a faire une demande GET a l'API de PRIM IDF,
+parce que l'esp32 s3 accepte uniquement les modes TLS 1.2 et anterieur alors que l'API de PRIM n'accepte
+que le TLS 1.3 c'est pourquoi le serveur python sert de pont entre les 2.
 
 pour la version [esp32](https://github.com/Sinayel/gotometroC/tree/main/gotometroesp32) commencer par :
 | PC (libcurl) | ESP32 (Arduino)     |
