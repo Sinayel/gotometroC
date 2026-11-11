@@ -1,0 +1,1134 @@
+{
+  "pagination": {
+    "total_result": 4,
+    "start_page": 0,
+    "items_per_page": 4,
+    "items_on_page": 4
+  },
+  "feed_publishers": [
+    {
+      "id": "IDFM:idfm_netex",
+      "name": "idfm_netex",
+      "url": "",
+      "license": "private"
+    },
+    {
+      "id": "IDFM:transilien_netex",
+      "name": "transilien_netex",
+      "url": "",
+      "license": "private"
+    }
+  ],
+  "disruptions": [
+    {
+      "id": "e0cec204-5e24-4d25-a199-94d1730dc479",
+      "disruption_id": "2ee94e27-8f99-4b40-85e1-e35f9b6841a1",
+      "impact_id": "e0cec204-5e24-4d25-a199-94d1730dc479",
+      "application_periods": [
+        {
+          "begin": "20260917T134230",
+          "end": "20270917T134230"
+        }
+      ],
+      "publication_period": {
+        "begin": "20260917T134230",
+        "end": "20270917T134230"
+      },
+      "status": "active",
+      "updated_at": "20260917T134238",
+      "tags": [
+        "Ascenseur"
+      ],
+      "cause": "perturbation",
+      "category": "Incidents",
+      "severity": {
+        "name": "perturbée",
+        "effect": "SIGNIFICANT_DELAYS",
+        "color": "#EF662F",
+        "priority": 30
+      },
+      "messages": [
+        {
+          "text": "GARE ST LAZARE Panne ascenseur situé Niveau Rue / Niveau Parking -2 / Niveau Parking -3",
+          "channel": {
+            "content_type": "text/plain",
+            "id": "ea77b9e2-7a06-11e8-ab20-005056a47b86",
+            "name": "sms ascenseurs",
+            "types": [
+              "sms"
+            ]
+          }
+        },
+        {
+          "text": "GARE ST LAZARE Panne de l'ascenseur situé Niveau Rue / Niveau Parking -2 / Niveau Parking -3",
+          "channel": {
+            "content_type": "text/html",
+            "id": "0c0c032e-7a07-11e8-ab20-005056a47b86",
+            "name": "email ascenseur",
+            "types": [
+              "email"
+            ]
+          }
+        },
+        {
+          "text": "GARE ST LAZARE Panne de l'ascenseur situé Niveau Rue / Niveau Parking -2 / Niveau Parking -3",
+          "channel": {
+            "content_type": "text/html",
+            "id": "3ae8df3e-7488-11e8-ac3b-005056a47b86",
+            "name": "moteur",
+            "types": [
+              "web"
+            ]
+          }
+        },
+        {
+          "text": "Panne d'un ascenseur",
+          "channel": {
+            "content_type": "text/plain",
+            "id": "d9dbc5a6-7a06-11e8-8b8c-005056a44da2",
+            "name": "titre",
+            "types": [
+              "title"
+            ]
+          }
+        }
+      ],
+      "impacted_objects": [
+        {
+          "pt_object": {
+            "id": "stop_area:IDFM:71370",
+            "name": "Gare Saint-Lazare (Paris)",
+            "quality": 0,
+            "stop_area": {
+              "id": "stop_area:IDFM:71370",
+              "name": "Gare Saint-Lazare",
+              "codes": [
+                {
+                  "type": "TN_PA",
+                  "value": "204"
+                },
+                {
+                  "type": "source",
+                  "value": "FR::multimodalStopPlace:71370:FR1"
+                }
+              ],
+              "timezone": "Europe/Paris",
+              "label": "Gare Saint-Lazare (Paris)",
+              "coord": {
+                "lon": "2.325352",
+                "lat": "48.875943"
+              },
+              "links": []
+            },
+            "embedded_type": "stop_area"
+          }
+        }
+      ],
+      "uri": "e0cec204-5e24-4d25-a199-94d1730dc479",
+      "disruption_uri": "2ee94e27-8f99-4b40-85e1-e35f9b6841a1",
+      "contributor": "shortterm.tr_idfm",
+      "reference": "GARES_CONNEXIONS_elevator_1238_20260917134247"
+    }
+  ],
+  "origins": [
+    {
+      "id": "stop_area:IDFM:490784",
+      "name": "Saint-Denis - Pleyel",
+      "codes": [
+        {
+          "type": "TN_PA",
+          "value": "1633"
+        },
+        {
+          "type": "source",
+          "value": "FR::multimodalStopPlace:490784:FR1"
+        }
+      ],
+      "timezone": "Europe/Paris",
+      "label": "Saint-Denis - Pleyel (Saint-Denis)",
+      "coord": {
+        "lon": "2.345011",
+        "lat": "48.917214"
+      },
+      "links": []
+    }
+  ],
+  "terminus": [
+    {
+      "id": "stop_area:IDFM:63284",
+      "name": "Aéroport d’Orly (Terminaux 1-2-3)",
+      "codes": [
+        {
+          "type": "source",
+          "value": "FR::multimodalStopPlace:63284:FR1"
+        }
+      ],
+      "timezone": "Europe/Paris",
+      "label": "Aéroport d’Orly (Terminaux 1-2-3) (Paray-Vieille-Poste)",
+      "coord": {
+        "lon": "2.361057",
+        "lat": "48.728894"
+      },
+      "links": []
+    }
+  ],
+  "context": {
+    "current_datetime": "20261111T134418",
+    "timezone": "Europe/Paris"
+  },
+  "departures": [
+    {
+      "route": {
+        "id": "route:IDFM:stif:local-251106-C01384-5",
+        "name": "Aéroport d'Orly",
+        "is_frequence": "False",
+        "direction_type": "outbound",
+        "codes": [
+          {
+            "type": "Netex_ServiceJourneyPattern",
+            "value": "RATP:ServiceJourneyPattern:MISS_RATP_C01384_1317761393:LOC"
+          },
+          {
+            "type": "source",
+            "value": "stif:Route:local-251106-C01384-5:LOC"
+          }
+        ],
+        "direction": {
+          "id": "stop_area:IDFM:63284",
+          "name": "Aéroport d’Orly (Terminaux 1-2-3) (Paray-Vieille-Poste)",
+          "quality": 0,
+          "stop_area": {
+            "id": "stop_area:IDFM:63284",
+            "name": "Aéroport d’Orly (Terminaux 1-2-3)",
+            "codes": [
+              {
+                "type": "source",
+                "value": "FR::multimodalStopPlace:63284:FR1"
+              }
+            ],
+            "timezone": "Europe/Paris",
+            "label": "Aéroport d’Orly (Terminaux 1-2-3) (Paray-Vieille-Poste)",
+            "coord": {
+              "lon": "2.361057",
+              "lat": "48.728894"
+            },
+            "links": []
+          },
+          "embedded_type": "stop_area"
+        },
+        "geojson": {
+          "type": "MultiLineString",
+          "coordinates": []
+        },
+        "links": []
+      },
+      "stop_point": {
+        "id": "stop_point:IDFM:462972",
+        "name": "Saint-Lazare",
+        "codes": [
+          {
+            "type": "netex_monomodal_stopplace",
+            "value": "monomodalStopPlace:462374"
+          },
+          {
+            "type": "netex_zder_quay",
+            "value": "21962"
+          },
+          {
+            "type": "netex_zder_quay",
+            "value": "21963"
+          },
+          {
+            "type": "netex_zder_quay",
+            "value": "21964"
+          },
+          {
+            "type": "netex_zder_quay",
+            "value": "22218"
+          },
+          {
+            "type": "netex_zder_quay",
+            "value": "462969"
+          },
+          {
+            "type": "netex_zder_quay",
+            "value": "462970"
+          },
+          {
+            "type": "netex_zder_quay",
+            "value": "462971"
+          },
+          {
+            "type": "netex_zder_quay",
+            "value": "462972"
+          },
+          {
+            "type": "netex_zder_quay",
+            "value": "monomodalStopPlace:462374"
+          },
+          {
+            "type": "source",
+            "value": "FR::Quay:462972:FR1"
+          }
+        ],
+        "label": "Saint-Lazare (Paris)",
+        "coord": {
+          "lon": "2.324242",
+          "lat": "48.875797"
+        },
+        "links": [],
+        "equipments": [
+          "has_wheelchair_boarding",
+          "has_visual_announcement",
+          "has_audible_announcement"
+        ],
+        "address": {
+          "id": "2.324242279449081;48.875796977111676",
+          "name": "Cour de Rome 8ème",
+          "house_number": 1,
+          "coord": {
+            "lon": "2.324242",
+            "lat": "48.875797"
+          },
+          "label": "1 Cour de Rome 8ème (Paris)"
+        },
+        "fare_zone": {
+          "name": "1"
+        }
+      },
+      "stop_date_time": {
+        "departure_date_time": "20261111T134421",
+        "base_departure_date_time": "20261111T134421",
+        "arrival_date_time": "20261111T134347",
+        "base_arrival_date_time": "20261111T134347",
+        "additional_informations": [],
+        "links": [
+          {
+            "type": "stop_area",
+            "rel": "origins",
+            "category": "origin",
+            "id": "stop_area:IDFM:490784",
+            "internal": true
+          },
+          {
+            "type": "stop_area",
+            "rel": "terminus",
+            "category": "terminus",
+            "id": "stop_area:IDFM:63284",
+            "internal": true
+          }
+        ],
+        "data_freshness": "base_schedule"
+      },
+      "display_informations": {
+        "commercial_mode": "Métro",
+        "network": "RATP",
+        "direction": "Aéroport d'Orly (Paray-Vieille-Poste)",
+        "label": "14",
+        "color": "640082",
+        "code": "14",
+        "headsign": "Aéroport d'Orly",
+        "name": "14",
+        "links": [
+          {
+            "templated": false,
+            "rel": "disruptions",
+            "internal": true,
+            "type": "disruption",
+            "id": "e0cec204-5e24-4d25-a199-94d1730dc479"
+          },
+          {
+            "templated": false,
+            "rel": "origins",
+            "internal": true,
+            "type": "stop_area",
+            "id": "stop_area:IDFM:490784",
+            "category": "origin"
+          },
+          {
+            "templated": false,
+            "rel": "terminus",
+            "internal": true,
+            "type": "stop_area",
+            "id": "stop_area:IDFM:63284",
+            "category": "terminus"
+          }
+        ],
+        "text_color": "FFFFFF",
+        "trip_short_name": "RATP",
+        "company": "RATP",
+        "description": "",
+        "physical_mode": "Métro",
+        "equipments": [
+          "has_wheelchair_accessibility",
+          "has_air_conditioned"
+        ]
+      },
+      "links": [
+        {
+          "type": "line",
+          "id": "line:IDFM:C01384"
+        },
+        {
+          "type": "company",
+          "id": "company:IDFM:100"
+        },
+        {
+          "type": "vehicle_journey",
+          "id": "vehicle_journey:IDFM:RATP:COU_RATP_14DICOSTNER02_2026_Pl1406Or1406-9"
+        },
+        {
+          "type": "route",
+          "id": "route:IDFM:stif:local-251106-C01384-5"
+        },
+        {
+          "type": "commercial_mode",
+          "id": "commercial_mode:Metro"
+        },
+        {
+          "type": "physical_mode",
+          "id": "physical_mode:Metro"
+        },
+        {
+          "type": "network",
+          "id": "network:IDFM:Operator_100"
+        }
+      ]
+    },
+    {
+      "route": {
+        "id": "route:IDFM:stif:local-251106-C01384-5",
+        "name": "Aéroport d'Orly",
+        "is_frequence": "False",
+        "direction_type": "outbound",
+        "codes": [
+          {
+            "type": "Netex_ServiceJourneyPattern",
+            "value": "RATP:ServiceJourneyPattern:MISS_RATP_C01384_1317761393:LOC"
+          },
+          {
+            "type": "source",
+            "value": "stif:Route:local-251106-C01384-5:LOC"
+          }
+        ],
+        "direction": {
+          "id": "stop_area:IDFM:63284",
+          "name": "Aéroport d’Orly (Terminaux 1-2-3) (Paray-Vieille-Poste)",
+          "quality": 0,
+          "stop_area": {
+            "id": "stop_area:IDFM:63284",
+            "name": "Aéroport d’Orly (Terminaux 1-2-3)",
+            "codes": [
+              {
+                "type": "source",
+                "value": "FR::multimodalStopPlace:63284:FR1"
+              }
+            ],
+            "timezone": "Europe/Paris",
+            "label": "Aéroport d’Orly (Terminaux 1-2-3) (Paray-Vieille-Poste)",
+            "coord": {
+              "lon": "2.361057",
+              "lat": "48.728894"
+            },
+            "links": []
+          },
+          "embedded_type": "stop_area"
+        },
+        "geojson": {
+          "type": "MultiLineString",
+          "coordinates": []
+        },
+        "links": []
+      },
+      "stop_point": {
+        "id": "stop_point:IDFM:462972",
+        "name": "Saint-Lazare",
+        "codes": [
+          {
+            "type": "netex_monomodal_stopplace",
+            "value": "monomodalStopPlace:462374"
+          },
+          {
+            "type": "netex_zder_quay",
+            "value": "21962"
+          },
+          {
+            "type": "netex_zder_quay",
+            "value": "21963"
+          },
+          {
+            "type": "netex_zder_quay",
+            "value": "21964"
+          },
+          {
+            "type": "netex_zder_quay",
+            "value": "22218"
+          },
+          {
+            "type": "netex_zder_quay",
+            "value": "462969"
+          },
+          {
+            "type": "netex_zder_quay",
+            "value": "462970"
+          },
+          {
+            "type": "netex_zder_quay",
+            "value": "462971"
+          },
+          {
+            "type": "netex_zder_quay",
+            "value": "462972"
+          },
+          {
+            "type": "netex_zder_quay",
+            "value": "monomodalStopPlace:462374"
+          },
+          {
+            "type": "source",
+            "value": "FR::Quay:462972:FR1"
+          }
+        ],
+        "label": "Saint-Lazare (Paris)",
+        "coord": {
+          "lon": "2.324242",
+          "lat": "48.875797"
+        },
+        "links": [],
+        "equipments": [
+          "has_wheelchair_boarding",
+          "has_visual_announcement",
+          "has_audible_announcement"
+        ],
+        "address": {
+          "id": "2.324242279449081;48.875796977111676",
+          "name": "Cour de Rome 8ème",
+          "house_number": 1,
+          "coord": {
+            "lon": "2.324242",
+            "lat": "48.875797"
+          },
+          "label": "1 Cour de Rome 8ème (Paris)"
+        },
+        "fare_zone": {
+          "name": "1"
+        }
+      },
+      "stop_date_time": {
+        "departure_date_time": "20261111T134821",
+        "base_departure_date_time": "20261111T134821",
+        "arrival_date_time": "20261111T134747",
+        "base_arrival_date_time": "20261111T134747",
+        "additional_informations": [],
+        "links": [
+          {
+            "type": "stop_area",
+            "rel": "origins",
+            "category": "origin",
+            "id": "stop_area:IDFM:490784",
+            "internal": true
+          },
+          {
+            "type": "stop_area",
+            "rel": "terminus",
+            "category": "terminus",
+            "id": "stop_area:IDFM:63284",
+            "internal": true
+          }
+        ],
+        "data_freshness": "base_schedule"
+      },
+      "display_informations": {
+        "commercial_mode": "Métro",
+        "network": "RATP",
+        "direction": "Aéroport d'Orly (Paray-Vieille-Poste)",
+        "label": "14",
+        "color": "640082",
+        "code": "14",
+        "headsign": "Aéroport d'Orly",
+        "name": "14",
+        "links": [
+          {
+            "templated": false,
+            "rel": "disruptions",
+            "internal": true,
+            "type": "disruption",
+            "id": "e0cec204-5e24-4d25-a199-94d1730dc479"
+          },
+          {
+            "templated": false,
+            "rel": "origins",
+            "internal": true,
+            "type": "stop_area",
+            "id": "stop_area:IDFM:490784",
+            "category": "origin"
+          },
+          {
+            "templated": false,
+            "rel": "terminus",
+            "internal": true,
+            "type": "stop_area",
+            "id": "stop_area:IDFM:63284",
+            "category": "terminus"
+          }
+        ],
+        "text_color": "FFFFFF",
+        "trip_short_name": "RATP",
+        "company": "RATP",
+        "description": "",
+        "physical_mode": "Métro",
+        "equipments": [
+          "has_wheelchair_accessibility",
+          "has_air_conditioned"
+        ]
+      },
+      "links": [
+        {
+          "type": "line",
+          "id": "line:IDFM:C01384"
+        },
+        {
+          "type": "company",
+          "id": "company:IDFM:100"
+        },
+        {
+          "type": "vehicle_journey",
+          "id": "vehicle_journey:IDFM:RATP:COU_RATP_14DICOSTNER02_2026_Cl1402Or1407-12"
+        },
+        {
+          "type": "route",
+          "id": "route:IDFM:stif:local-251106-C01384-5"
+        },
+        {
+          "type": "commercial_mode",
+          "id": "commercial_mode:Metro"
+        },
+        {
+          "type": "physical_mode",
+          "id": "physical_mode:Metro"
+        },
+        {
+          "type": "network",
+          "id": "network:IDFM:Operator_100"
+        }
+      ]
+    },
+    {
+      "route": {
+        "id": "route:IDFM:stif:local-251106-C01384-5",
+        "name": "Aéroport d'Orly",
+        "is_frequence": "False",
+        "direction_type": "outbound",
+        "codes": [
+          {
+            "type": "Netex_ServiceJourneyPattern",
+            "value": "RATP:ServiceJourneyPattern:MISS_RATP_C01384_1317761393:LOC"
+          },
+          {
+            "type": "source",
+            "value": "stif:Route:local-251106-C01384-5:LOC"
+          }
+        ],
+        "direction": {
+          "id": "stop_area:IDFM:63284",
+          "name": "Aéroport d’Orly (Terminaux 1-2-3) (Paray-Vieille-Poste)",
+          "quality": 0,
+          "stop_area": {
+            "id": "stop_area:IDFM:63284",
+            "name": "Aéroport d’Orly (Terminaux 1-2-3)",
+            "codes": [
+              {
+                "type": "source",
+                "value": "FR::multimodalStopPlace:63284:FR1"
+              }
+            ],
+            "timezone": "Europe/Paris",
+            "label": "Aéroport d’Orly (Terminaux 1-2-3) (Paray-Vieille-Poste)",
+            "coord": {
+              "lon": "2.361057",
+              "lat": "48.728894"
+            },
+            "links": []
+          },
+          "embedded_type": "stop_area"
+        },
+        "geojson": {
+          "type": "MultiLineString",
+          "coordinates": []
+        },
+        "links": []
+      },
+      "stop_point": {
+        "id": "stop_point:IDFM:462972",
+        "name": "Saint-Lazare",
+        "codes": [
+          {
+            "type": "netex_monomodal_stopplace",
+            "value": "monomodalStopPlace:462374"
+          },
+          {
+            "type": "netex_zder_quay",
+            "value": "21962"
+          },
+          {
+            "type": "netex_zder_quay",
+            "value": "21963"
+          },
+          {
+            "type": "netex_zder_quay",
+            "value": "21964"
+          },
+          {
+            "type": "netex_zder_quay",
+            "value": "22218"
+          },
+          {
+            "type": "netex_zder_quay",
+            "value": "462969"
+          },
+          {
+            "type": "netex_zder_quay",
+            "value": "462970"
+          },
+          {
+            "type": "netex_zder_quay",
+            "value": "462971"
+          },
+          {
+            "type": "netex_zder_quay",
+            "value": "462972"
+          },
+          {
+            "type": "netex_zder_quay",
+            "value": "monomodalStopPlace:462374"
+          },
+          {
+            "type": "source",
+            "value": "FR::Quay:462972:FR1"
+          }
+        ],
+        "label": "Saint-Lazare (Paris)",
+        "coord": {
+          "lon": "2.324242",
+          "lat": "48.875797"
+        },
+        "links": [],
+        "equipments": [
+          "has_wheelchair_boarding",
+          "has_visual_announcement",
+          "has_audible_announcement"
+        ],
+        "address": {
+          "id": "2.324242279449081;48.875796977111676",
+          "name": "Cour de Rome 8ème",
+          "house_number": 1,
+          "coord": {
+            "lon": "2.324242",
+            "lat": "48.875797"
+          },
+          "label": "1 Cour de Rome 8ème (Paris)"
+        },
+        "fare_zone": {
+          "name": "1"
+        }
+      },
+      "stop_date_time": {
+        "departure_date_time": "20261111T135221",
+        "base_departure_date_time": "20261111T135221",
+        "arrival_date_time": "20261111T135147",
+        "base_arrival_date_time": "20261111T135147",
+        "additional_informations": [],
+        "links": [
+          {
+            "type": "stop_area",
+            "rel": "origins",
+            "category": "origin",
+            "id": "stop_area:IDFM:490784",
+            "internal": true
+          },
+          {
+            "type": "stop_area",
+            "rel": "terminus",
+            "category": "terminus",
+            "id": "stop_area:IDFM:63284",
+            "internal": true
+          }
+        ],
+        "data_freshness": "base_schedule"
+      },
+      "display_informations": {
+        "commercial_mode": "Métro",
+        "network": "RATP",
+        "direction": "Aéroport d'Orly (Paray-Vieille-Poste)",
+        "label": "14",
+        "color": "640082",
+        "code": "14",
+        "headsign": "Aéroport d'Orly",
+        "name": "14",
+        "links": [
+          {
+            "templated": false,
+            "rel": "disruptions",
+            "internal": true,
+            "type": "disruption",
+            "id": "e0cec204-5e24-4d25-a199-94d1730dc479"
+          },
+          {
+            "templated": false,
+            "rel": "origins",
+            "internal": true,
+            "type": "stop_area",
+            "id": "stop_area:IDFM:490784",
+            "category": "origin"
+          },
+          {
+            "templated": false,
+            "rel": "terminus",
+            "internal": true,
+            "type": "stop_area",
+            "id": "stop_area:IDFM:63284",
+            "category": "terminus"
+          }
+        ],
+        "text_color": "FFFFFF",
+        "trip_short_name": "RATP",
+        "company": "RATP",
+        "description": "",
+        "physical_mode": "Métro",
+        "equipments": [
+          "has_wheelchair_accessibility",
+          "has_air_conditioned"
+        ]
+      },
+      "links": [
+        {
+          "type": "line",
+          "id": "line:IDFM:C01384"
+        },
+        {
+          "type": "company",
+          "id": "company:IDFM:100"
+        },
+        {
+          "type": "vehicle_journey",
+          "id": "vehicle_journey:IDFM:RATP:COU_RATP_14DICOSTNER02_2026_Pl1401Or1402-13"
+        },
+        {
+          "type": "route",
+          "id": "route:IDFM:stif:local-251106-C01384-5"
+        },
+        {
+          "type": "commercial_mode",
+          "id": "commercial_mode:Metro"
+        },
+        {
+          "type": "physical_mode",
+          "id": "physical_mode:Metro"
+        },
+        {
+          "type": "network",
+          "id": "network:IDFM:Operator_100"
+        }
+      ]
+    },
+    {
+      "route": {
+        "id": "route:IDFM:stif:local-251106-C01384-5",
+        "name": "Aéroport d'Orly",
+        "is_frequence": "False",
+        "direction_type": "outbound",
+        "codes": [
+          {
+            "type": "Netex_ServiceJourneyPattern",
+            "value": "RATP:ServiceJourneyPattern:MISS_RATP_C01384_1317761393:LOC"
+          },
+          {
+            "type": "source",
+            "value": "stif:Route:local-251106-C01384-5:LOC"
+          }
+        ],
+        "direction": {
+          "id": "stop_area:IDFM:63284",
+          "name": "Aéroport d’Orly (Terminaux 1-2-3) (Paray-Vieille-Poste)",
+          "quality": 0,
+          "stop_area": {
+            "id": "stop_area:IDFM:63284",
+            "name": "Aéroport d’Orly (Terminaux 1-2-3)",
+            "codes": [
+              {
+                "type": "source",
+                "value": "FR::multimodalStopPlace:63284:FR1"
+              }
+            ],
+            "timezone": "Europe/Paris",
+            "label": "Aéroport d’Orly (Terminaux 1-2-3) (Paray-Vieille-Poste)",
+            "coord": {
+              "lon": "2.361057",
+              "lat": "48.728894"
+            },
+            "links": []
+          },
+          "embedded_type": "stop_area"
+        },
+        "geojson": {
+          "type": "MultiLineString",
+          "coordinates": []
+        },
+        "links": []
+      },
+      "stop_point": {
+        "id": "stop_point:IDFM:462972",
+        "name": "Saint-Lazare",
+        "codes": [
+          {
+            "type": "netex_monomodal_stopplace",
+            "value": "monomodalStopPlace:462374"
+          },
+          {
+            "type": "netex_zder_quay",
+            "value": "21962"
+          },
+          {
+            "type": "netex_zder_quay",
+            "value": "21963"
+          },
+          {
+            "type": "netex_zder_quay",
+            "value": "21964"
+          },
+          {
+            "type": "netex_zder_quay",
+            "value": "22218"
+          },
+          {
+            "type": "netex_zder_quay",
+            "value": "462969"
+          },
+          {
+            "type": "netex_zder_quay",
+            "value": "462970"
+          },
+          {
+            "type": "netex_zder_quay",
+            "value": "462971"
+          },
+          {
+            "type": "netex_zder_quay",
+            "value": "462972"
+          },
+          {
+            "type": "netex_zder_quay",
+            "value": "monomodalStopPlace:462374"
+          },
+          {
+            "type": "source",
+            "value": "FR::Quay:462972:FR1"
+          }
+        ],
+        "label": "Saint-Lazare (Paris)",
+        "coord": {
+          "lon": "2.324242",
+          "lat": "48.875797"
+        },
+        "links": [],
+        "equipments": [
+          "has_wheelchair_boarding",
+          "has_visual_announcement",
+          "has_audible_announcement"
+        ],
+        "address": {
+          "id": "2.324242279449081;48.875796977111676",
+          "name": "Cour de Rome 8ème",
+          "house_number": 1,
+          "coord": {
+            "lon": "2.324242",
+            "lat": "48.875797"
+          },
+          "label": "1 Cour de Rome 8ème (Paris)"
+        },
+        "fare_zone": {
+          "name": "1"
+        }
+      },
+      "stop_date_time": {
+        "departure_date_time": "20261111T135621",
+        "base_departure_date_time": "20261111T135621",
+        "arrival_date_time": "20261111T135547",
+        "base_arrival_date_time": "20261111T135547",
+        "additional_informations": [],
+        "links": [
+          {
+            "type": "stop_area",
+            "rel": "origins",
+            "category": "origin",
+            "id": "stop_area:IDFM:490784",
+            "internal": true
+          },
+          {
+            "type": "stop_area",
+            "rel": "terminus",
+            "category": "terminus",
+            "id": "stop_area:IDFM:63284",
+            "internal": true
+          }
+        ],
+        "data_freshness": "base_schedule"
+      },
+      "display_informations": {
+        "commercial_mode": "Métro",
+        "network": "RATP",
+        "direction": "Aéroport d'Orly (Paray-Vieille-Poste)",
+        "label": "14",
+        "color": "640082",
+        "code": "14",
+        "headsign": "Aéroport d'Orly",
+        "name": "14",
+        "links": [
+          {
+            "templated": false,
+            "rel": "disruptions",
+            "internal": true,
+            "type": "disruption",
+            "id": "e0cec204-5e24-4d25-a199-94d1730dc479"
+          },
+          {
+            "templated": false,
+            "rel": "origins",
+            "internal": true,
+            "type": "stop_area",
+            "id": "stop_area:IDFM:490784",
+            "category": "origin"
+          },
+          {
+            "templated": false,
+            "rel": "terminus",
+            "internal": true,
+            "type": "stop_area",
+            "id": "stop_area:IDFM:63284",
+            "category": "terminus"
+          }
+        ],
+        "text_color": "FFFFFF",
+        "trip_short_name": "RATP",
+        "company": "RATP",
+        "description": "",
+        "physical_mode": "Métro",
+        "equipments": [
+          "has_wheelchair_accessibility",
+          "has_air_conditioned"
+        ]
+      },
+      "links": [
+        {
+          "type": "line",
+          "id": "line:IDFM:C01384"
+        },
+        {
+          "type": "company",
+          "id": "company:IDFM:100"
+        },
+        {
+          "type": "vehicle_journey",
+          "id": "vehicle_journey:IDFM:RATP:COU_RATP_14DICOSTNER02_2026_Sm1403Or1409-14"
+        },
+        {
+          "type": "route",
+          "id": "route:IDFM:stif:local-251106-C01384-5"
+        },
+        {
+          "type": "commercial_mode",
+          "id": "commercial_mode:Metro"
+        },
+        {
+          "type": "physical_mode",
+          "id": "physical_mode:Metro"
+        },
+        {
+          "type": "network",
+          "id": "network:IDFM:Operator_100"
+        }
+      ]
+    }
+  ],
+  "links": [
+    {
+      "href": "https://api-idfm.go.navitia.io/v1/coverage/idfm/disruptions/{disruptions.id}",
+      "templated": true,
+      "rel": "disruptions",
+      "type": "disruptions"
+    },
+    {
+      "href": "https://api-idfm.go.navitia.io/v1/coverage/idfm/lines/{line.id}",
+      "templated": true,
+      "rel": "lines",
+      "type": "line"
+    },
+    {
+      "href": "https://api-idfm.go.navitia.io/v1/coverage/idfm/companies/{company.id}",
+      "templated": true,
+      "rel": "companies",
+      "type": "company"
+    },
+    {
+      "href": "https://api-idfm.go.navitia.io/v1/coverage/idfm/physical_modes/{physical_mode.id}",
+      "templated": true,
+      "rel": "physical_modes",
+      "type": "physical_mode"
+    },
+    {
+      "href": "https://api-idfm.go.navitia.io/v1/coverage/idfm/routes/{route.id}",
+      "templated": true,
+      "rel": "routes",
+      "type": "route"
+    },
+    {
+      "href": "https://api-idfm.go.navitia.io/v1/coverage/idfm/vehicle_journeys/{vehicle_journey.id}",
+      "templated": true,
+      "rel": "vehicle_journeys",
+      "type": "vehicle_journey"
+    },
+    {
+      "href": "https://api-idfm.go.navitia.io/v1/coverage/idfm/networks/{network.id}",
+      "templated": true,
+      "rel": "networks",
+      "type": "network"
+    },
+    {
+      "href": "https://api-idfm.go.navitia.io/v1/coverage/idfm/commercial_modes/{commercial_mode.id}",
+      "templated": true,
+      "rel": "commercial_modes",
+      "type": "commercial_mode"
+    },
+    {
+      "href": "https://api-idfm.go.navitia.io/v1/coverage/idfm/stop_areas/{stop_area.id}",
+      "templated": true,
+      "rel": "stop_areas",
+      "type": "stop_area"
+    },
+    {
+      "href": "https://api-idfm.go.navitia.io/v1/coverage/idfm/disruptions/{disruption.id}",
+      "templated": true,
+      "rel": "disruptions",
+      "type": "disruption"
+    },
+    {
+      "href": "https://api-idfm.go.navitia.io/v1/coverage/idfm/addresses/{address.id}",
+      "templated": true,
+      "rel": "addresses",
+      "type": "address"
+    },
+    {
+      "href": "https://api-idfm.go.navitia.io/v1/coverage/idfm/stop_points/{stop_point.id}",
+      "templated": true,
+      "rel": "stop_points",
+      "type": "stop_point"
+    },
+    {
+      "href": "https://api-idfm.go.navitia.io/v1/coverage/idfm/stop_areas/stop_area:IDFM:71370/lines/line:IDFM:C01384/routes/route:IDFM:stif:local-251106-C01384-5/departures?count=4&data_freshness=realtime&depth=0",
+      "type": "first",
+      "templated": false
+    }
+  ],
+  "notes": [],
+  "exceptions": []
+}
